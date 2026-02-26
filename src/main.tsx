@@ -1,10 +1,14 @@
-import {StrictMode} from 'react';
-import {createRoot} from 'react-dom/client';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import './index.css';
+// 1. Import the Analytics component
+import { Analytics } from '@vercel/analytics/react';
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
     <App />
-  </StrictMode>,
+    {/* 2. Place it here to start tracking */}
+    <Analytics />
+  </React.StrictMode>,
 );
