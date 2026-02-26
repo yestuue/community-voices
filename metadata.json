@@ -1,0 +1,7 @@
+{
+  "name": "Community Voices",
+  "description": "A platform for US residents to earn money by sharing opinions and completing simple tasks.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
